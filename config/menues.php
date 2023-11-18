@@ -3,6 +3,10 @@
 return [
     'menu_genre' => [
         [
+            'href' => "route('home')",
+            'text' => 'Home'
+        ],
+        [
             'href' => '',
             'text' => 'Donna'
         ],

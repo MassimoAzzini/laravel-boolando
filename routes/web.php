@@ -33,3 +33,7 @@ Route::get('/dettaglio-prodotto/{slug}', function ($slug) {
     return view('productDetail', compact('product'));
 })->name('productDetail');
 
+Route::get('/informazioni-legali', function () {
+    return view('legalInformation');
+})->name('legalInformation');
+

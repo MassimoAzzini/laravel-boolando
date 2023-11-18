@@ -27,7 +27,7 @@
               <ul class="flex">
                 @foreach ($social as $item)
 
-                    <li><a href="{{$item['link']}}" target="_blank"><i class="{{$item['icon']}}"></i></a></li>
+                    <li><a href=" {{ route('legalInformation') }}" target="_blank"><i class="{{$item['icon']}}"></i></a></li>
                 @endforeach
               </ul>
             </nav>
