@@ -19,18 +19,14 @@ Route::get('/', function () {
 
 Route::get('/dettaglio-prodotto/{slug}', function ($slug) {
 
-    // prendo l'eleco dei prodotti
     $products = config('products');
 
-    // estraggo dall'array di prodotti l'elemento con slug = $slug
     $product_array = array_filter($products, fn($product) => $product['id'] == $slug);
 
-    // verifico se è stato trovato un prodotto. Altrienti genero un 404
     if(empty($product_array)) {
         abort(404);
     }
 
-    // prendo il primo elemento di questo array
     $product = $product_array[array_key_first($product_array)];
 
 
