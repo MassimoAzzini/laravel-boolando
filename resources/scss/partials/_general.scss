@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+ul.flex {
+  list-style: none;
+
+  li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
