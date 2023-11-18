@@ -34,37 +34,42 @@ return [
     ],
     'privacy_information' => [
         [
-            'name' => '',
+            'href' => '',
             'text' => 'Informazioni legali'
         ],
         [
-            'name' => '',
+            'href' => '',
             'text' => 'Informativa sulla privacy'
         ],
         [
-            'name' => '',
+            'href' => '',
             'text' => 'Diritto di recesso'
         ],
     ],
     'social' => [
         [
             'name' => 'Twitter',
+            'icon' => 'fa-brands fa-square-twitter',
             'link' => ''
         ],
         [
             'name' => 'Facebook',
+            'icon' => 'fa-brands fa-square-facebook',
             'link' => ''
         ],
         [
             'name' => 'Instagram',
+            'icon' => 'fa-brands fa-square-instagram',
             'link' => ''
         ],
         [
             'name' => 'Pinterest',
+            'icon' => 'fa-brands fa-square-pinterest',
             'link' => ''
         ],
         [
             'name' => 'YouTube',
+            'icon' => 'fa-brands fa-square-youtube',
             'link' => ''
         ],
     ],

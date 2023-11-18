@@ -1,0 +1,27 @@
+.cont-detail{
+
+    width: 40%;
+    height: calc(100vh - 160px);
+
+    .product-detail{
+        flex-basis: 25%;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+
+        .image{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        h4{
+          margin: 40px;
+        }
+      }
+}
+

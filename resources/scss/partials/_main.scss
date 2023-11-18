@@ -7,4 +7,11 @@ main {
       flex-wrap: wrap;
 
     }
+
+    .error-container {
+        height: calc(100vh - 160px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
