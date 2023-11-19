@@ -9,7 +9,12 @@
     <div class="container flex">
         @foreach ($products as $product)
             @php
-                $isInFavorites = $product['isInFavorites']
+                $isInFavorites = $product['isInFavorites'];
+                $price = $product['price'];
+                $price_disc = $product['price']*(50/100);
+
+                
+
             @endphp
 
         <div class="product">
@@ -36,16 +41,13 @@
                     <span class="marca">{{$product['brand']}}</span>
                     <span class="modello">{{ strtoupper($product['name'])}}</span>
                     <div class="price">
-                        @foreach ($product['badges'] as $badge)
-                        @if ($badge['type'] == 'discount')
-
-                            <span class="last-price">{{$product['price']}} €</span>
-                            <span class="full-price">{{$product['price']}} €</span>
+                        @if (in_array('discount', $product))
+                            <span class="last-price">{{$price_disc}} €</span>
+                            <span class="full-price">{{$price}} €</span>
                         @else
-                            <span class="full-price">{{$product['price']}} €</span>
-
+                            
+                            <span class="last-price">{{$price}} €</span>
                         @endif
-                        @endforeach
 
 
                     </div>

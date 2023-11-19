@@ -37,3 +37,11 @@ Route::get('/informazioni-legali', function () {
     return view('legalInformation');
 })->name('legalInformation');
 
+Route::get('/informazioni-privacy', function () {
+    return view('privacy');
+})->name('privacy');
+
+Route::get('/recesso', function () {
+    return view('recesso');
+})->name('recesso');
+

@@ -3,19 +3,19 @@
 return [
     'menu_genre' => [
         [
-            'href' => "route('home')",
+            'href' => "/",
             'text' => 'Home'
         ],
         [
-            'href' => '',
+            'href' => '/donna',
             'text' => 'Donna'
         ],
         [
-            'href' => '',
+            'href' => '/uomo',
             'text' => 'Uomo'
         ],
         [
-            'href' => '',
+            'href' => '/bambini',
             'text' => 'Bambini'
         ],
     ],
@@ -38,15 +38,15 @@ return [
     ],
     'privacy_information' => [
         [
-            'href' => '',
+            'href' => '/informazioni-legali',
             'text' => 'Informazioni legali'
         ],
         [
-            'href' => '',
+            'href' => '/informazioni-privacy',
             'text' => 'Informativa sulla privacy'
         ],
         [
-            'href' => '',
+            'href' => '/recesso',
             'text' => 'Diritto di recesso'
         ],
     ],
@@ -54,27 +54,27 @@ return [
         [
             'name' => 'Twitter',
             'icon' => 'fa-brands fa-square-twitter',
-            'link' => ''
+            'link' => 'https://twitter.com/'
         ],
         [
             'name' => 'Facebook',
             'icon' => 'fa-brands fa-square-facebook',
-            'link' => ''
+            'link' => 'https://www.facebook.com/'
         ],
         [
             'name' => 'Instagram',
             'icon' => 'fa-brands fa-square-instagram',
-            'link' => ''
+            'link' => 'https://www.instagram.com/'
         ],
         [
             'name' => 'Pinterest',
             'icon' => 'fa-brands fa-square-pinterest',
-            'link' => ''
+            'link' => 'https://www.pinterest.it/'
         ],
         [
             'name' => 'YouTube',
             'icon' => 'fa-brands fa-square-youtube',
-            'link' => ''
+            'link' => 'https://www.youtube.com/'
         ],
     ],
 ];
