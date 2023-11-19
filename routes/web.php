@@ -45,3 +45,7 @@ Route::get('/recesso', function () {
     return view('recesso');
 })->name('recesso');
 
+Route::get('/favorites', function () {
+    return view('favorites');
+})->name('favorites');
+

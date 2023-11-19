@@ -27,7 +27,7 @@ return [
         ],
         [
             'name' => 'favorites',
-            'href' => '',
+            'href' => '/favorites',
             'icon' => 'fa-regular fa-heart'
         ],
         [

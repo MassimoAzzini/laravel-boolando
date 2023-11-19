@@ -100,9 +100,10 @@ return [
       [
         "type" => "tag",
         "value" => "Sostenibilità"
-      ]
+      ],
+
     ]
-  ]
+  ],
 ]
 
 ?>
