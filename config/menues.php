@@ -22,7 +22,7 @@ return [
     'menu_account' => [
         [
             'name' => 'user',
-            'href' => '',
+            'href' => '/user',
             'icon' => 'fa-regular fa-user'
         ],
         [
@@ -32,7 +32,7 @@ return [
         ],
         [
             'name' => 'shopping',
-            'href' => '',
+            'href' => '/shopping',
             'icon' => 'fa-solid fa-bag-shopping'
         ],
     ],

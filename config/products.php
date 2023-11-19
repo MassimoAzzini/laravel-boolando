@@ -59,14 +59,14 @@ return [
     "price" => 14.99,
     "isInFavorites" => false,
     "badges" => [
-      // [
-      //   "type" => "tag",
-      //   "value" => "Sostenibilità"
-      // ],
-      // [
-      //   "type" => "discount",
-      //   "value" => "-50%"
-      // ]
+      [
+        "type" => "tag",
+        "value" => "Sostenibilità"
+      ],
+      [
+        "type" => "discount",
+        "value" => "-50%"
+      ]
     ]
   ],
   [
@@ -100,10 +100,9 @@ return [
       [
         "type" => "tag",
         "value" => "Sostenibilità"
-      ],
-
+      ]
     ]
-  ],
+  ]
 ]
 
 ?>
