@@ -11,14 +11,14 @@
             @php
                 $isInFavorites = $product['isInFavorites'];
                 $price = $product['price'];
-                $price_disc = $product['price']*(50/100);
 
-                
+
+
 
             @endphp
 
         <div class="product">
-            <a href="{{ route('productDetail', ['slug' => $product['id']]) }}">
+            <a href="{{ route('productDetail', ['id' => $product['id']]) }}">
 
                 <div class="image relative">
                     <img id="img-relaxed" src="{{ Vite::asset('resources/img/'.$product['frontImage']) }}" alt="">
@@ -41,13 +41,28 @@
                     <span class="marca">{{$product['brand']}}</span>
                     <span class="modello">{{ strtoupper($product['name'])}}</span>
                     <div class="price">
-                        @if (in_array('discount', $product))
+                        @php
+                            $scount = false;
+                            foreach ($product['badges'] as $badge) {
+                                if ($badge['type'] == 'discount'){
+                                    $scount = true;
+                                    $discount = (int)($badge['value']);
+
+                                    $price_disc = number_format(($product['price'] * $discount / -100), 2);
+                                }
+                            }
+
+                        @endphp
+
+                        @if ($scount)
                             <span class="last-price">{{$price_disc}} €</span>
+
                             <span class="full-price">{{$price}} €</span>
                         @else
-                            
                             <span class="last-price">{{$price}} €</span>
                         @endif
+
+
 
 
                     </div>

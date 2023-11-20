@@ -53,7 +53,7 @@ return [
     'social' => [
         [
             'name' => 'Twitter',
-            'icon' => 'fa-brands fa-square-twitter',
+            'icon' => 'fa-brands fa-x-twitter',
             'link' => 'https://twitter.com/'
         ],
         [

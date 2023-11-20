@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/dettaglio-prodotto/{slug}', function ($slug) {
+Route::get('/dettaglio-prodotto/{id}', function ($id) {
 
     $products = config('products');
 
-    $product_array = array_filter($products, fn($product) => $product['id'] == $slug);
+    $product_array = array_filter($products, fn($product) => $product['id'] == $id);
 
     if(empty($product_array)) {
         abort(404);
